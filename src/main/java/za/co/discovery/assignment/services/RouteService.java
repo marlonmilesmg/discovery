@@ -1,6 +1,5 @@
 package za.co.discovery.assignment.services;
 
-import za.co.discovery.assignment.controller.InterstellarController;
 import za.co.discovery.assignment.controller.InterstellarNodeServiceImpl;
 import za.co.discovery.assignment.models.Planet;
 import za.co.discovery.assignment.models.RouteRequest;
@@ -11,7 +10,7 @@ import javax.jws.WebParam;
 import javax.jws.WebService;
 import java.util.List;
 
-@WebService(targetNamespace = "http://discovery.co.za/route")
+@WebService(targetNamespace = "http://localhost:8080/discovery/assignment/route")
 public class RouteService {
 private InterstellarNodeServiceImpl interstellarNodeService;
     @WebMethod(operationName = "getRoute")
